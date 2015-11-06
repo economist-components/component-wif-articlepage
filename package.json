@@ -126,6 +126,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
+    "react": "^0.14.2",
     "@economist/component-tabview": "^2.0.0",
     "@economist/component-articletemplate": "7.0.1",
     "@economist/component-variantify": "1.0.1",
@@ -158,7 +159,6 @@
     "npm-watch": "0.0.1",
     "parallelshell": "^2.0.0",
     "pre-commit": "^1.0.10",
-    "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.2",
     "react-dom": "^0.14.2",
     "teaspoon": "^5.0.1",
@@ -166,8 +166,7 @@
   },
   "peerDependencies": {
     "@economist/component-font-neutra2": "^1.0.4",
-    "@economist/component-font-officina": "^1.0.0",
-    "react": "^0.14.2"
+    "@economist/component-font-officina": "^1.0.0"
   },
   "keywords": [
     "articlepage",
