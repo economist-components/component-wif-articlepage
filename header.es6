@@ -1,6 +1,5 @@
 /* eslint one-var: 0 */
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
 
@@ -42,7 +41,7 @@ export class WifHeader extends Component {
     if (mainImage) {
       mainImageEl = (
         <img
-          className={classnames(generateClassNameList(`ArticleTemplate--image`))}
+          className={generateClassNameList(`ArticleTemplate--image`).join(' ')}
           src={`${mainImage.src['1.0x']}`}
           srcSet={getSrcSet(mainImage.src)}
           alt={mainImage.alt}
@@ -54,8 +53,7 @@ export class WifHeader extends Component {
       sectionEl = (
         <h2
           itemProp="articleSection"
-          className={classnames(generateClassNameList('ArticleTemplate--header-section'),
-                                ...extendedSectionHeaderItemClasses)}
+          className={[ ...generateClassNameList('ArticleTemplate--header-section'), ...extendedSectionHeaderItemClasses ].join(' ')}
         >
           {sectionName}
         </h2>
@@ -65,7 +63,7 @@ export class WifHeader extends Component {
       flytitleEl = (
         <h1
           itemProp="headline"
-          className={classnames(generateClassNameList('ArticleTemplate--flytitle'), ...extendedHeaderItemClasses)}
+          className={[ ...generateClassNameList('ArticleTemplate--flytitle'), ...extendedHeaderItemClasses ].join(' ')}
         >
           {flytitle}
         </h1>
@@ -75,7 +73,7 @@ export class WifHeader extends Component {
       titleEl = (
         <h3
           itemProp="alternativeHeadline"
-          className={classnames(generateClassNameList('ArticleTemplate--title'), ...extendedHeaderItemClasses)}
+          className={[ ...generateClassNameList('ArticleTemplate--title'), ...extendedHeaderItemClasses ].join(' ')}
         >
           {title}
         </h3>

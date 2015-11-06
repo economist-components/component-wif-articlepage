@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
 
@@ -28,7 +27,7 @@ export class WifSubheader extends Component {
     return (
       <p
         itemProp="description"
-        className={classnames(generateClassNameList('ArticleTemplate--rubric'), ...extendedSubheaderItemClasses)}
+        className={[ ...generateClassNameList('ArticleTemplate--rubric'), ...extendedSubheaderItemClasses ].join(' ')}
       >
         {rubric}
       </p>

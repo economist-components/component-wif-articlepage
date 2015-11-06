@@ -129,8 +129,7 @@
     "react": "^0.14.2",
     "@economist/component-tabview": "^2.0.0",
     "@economist/component-articletemplate": "7.0.1",
-    "@economist/component-variantify": "1.0.1",
-    "classnames": "^2.2.0"
+    "@economist/component-variantify": "1.0.1"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.5.0",

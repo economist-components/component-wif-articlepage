@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames';
 
 import TabView from '@economist/component-tabview';
 import { defaultGenerateClassNameList } from '@economist/component-variantify';
@@ -18,7 +17,7 @@ function WifTabView({ generateClassNameList = defaultGenerateClassNameList, curr
           itemScope
           itemType="http://schema.org/itemList"
         >
-          <div className={classnames(generateClassNameList(`TabView--Views--Tint`))}></div>
+          <div className={generateClassNameList(`TabView--Views--Tint`).join(' ')}></div>
           {(section.articles || [])
             .filter((article) => currentArticleId !== article.id)
             .map((article, articleKey) => (
@@ -27,7 +26,7 @@ function WifTabView({ generateClassNameList = defaultGenerateClassNameList, curr
               href={`/article/${article.id}/${article.slug}`}
               itemProp="url"
             >
-              <figure className={classnames(generateClassNameList(`TabView--View--Content`))}>
+              <figure className={generateClassNameList(`TabView--View--Content`).join(' ')}>
                 <img
                   src={`${article.tileImage.src['1.0x']}`}
                   srcSet={getSrcSet(article.tileImage.src)}
