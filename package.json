@@ -126,7 +126,7 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-tabview": "^1.2.3",
+    "@economist/component-tabview": "^2.0.0",
     "@economist/component-articletemplate": "7.0.1",
     "@economist/component-variantify": "1.0.1",
     "classnames": "^2.2.0"
