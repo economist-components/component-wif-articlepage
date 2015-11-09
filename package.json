@@ -128,7 +128,7 @@
   "dependencies": {
     "react": "^0.14.2",
     "@economist/component-tabview": "^2.0.0",
-    "@economist/component-articletemplate": "7.0.2",
+    "@economist/component-articletemplate": "8.0.0",
     "@economist/component-variantify": "1.0.1",
     "@economist/component-animatedpanel": "^2.1.8",
     "@economist/component-gallery": "^4.1.0",
