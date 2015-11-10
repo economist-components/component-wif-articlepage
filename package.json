@@ -128,8 +128,13 @@
   "dependencies": {
     "react": "^0.14.2",
     "@economist/component-tabview": "^2.0.0",
-    "@economist/component-articletemplate": "7.0.2",
-    "@economist/component-variantify": "1.0.1"
+    "@economist/component-articletemplate": "8.0.0",
+    "@economist/component-variantify": "1.0.1",
+    "@economist/component-animatedpanel": "^2.1.8",
+    "@economist/component-gallery": "^4.1.0",
+    "@economist/component-imagecaption": "^1.3.0",
+    "@economist/component-video": "^1.0.0",
+    "@economist/component-wifgobbet": "^1.3.4"
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.5.0",
